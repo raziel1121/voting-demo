@@ -2,7 +2,7 @@ redis:
   image: 'redis:latest'
 results:
   autoredeploy: true
-  image: 'cloudorg/results:latest'
+  image: 'raziel1121/results:latest'
   links:
     - redis
   ports:
@@ -10,7 +10,7 @@ results:
   restart: always
 voting:
   autoredeploy: true
-  image: 'cloudorg/voting:latest'
+  image: 'raziel1121/voting:latest'
   links:
     - redis
   restart: always
